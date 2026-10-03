@@ -5,6 +5,9 @@ description: Monta um vídeo documental curto a partir de N clipes de animação
 
 # Montagem de documentário em colagem de papel
 
+**Caminhos:** `scripts/` e `exemplos/` são relativos à pasta desta skill. Instalada globalmente, ela fica em
+`~/.claude/skills/montagem-colagem-papel/`. Use o caminho absoluto ao chamar os scripts a partir de outro projeto.
+
 Pipeline: transcrição com timestamps → beats → análise dos clipes → montagem → verificação visual → relatório.
 Execute sem pedir confirmação a cada etapa; pare só nos pontos marcados **[decisão]**.
 
