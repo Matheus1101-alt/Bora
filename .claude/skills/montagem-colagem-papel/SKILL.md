@@ -18,9 +18,13 @@ Execute sem pedir confirmação a cada etapa; pare só nos pontos marcados **[de
 Ao escolher vertical, avise que 16:9→9:16 descarta ~68% da largura em TODOS os beats.
 
 ## Referência aprovada
-Antes de começar, leia `exemplos/yamaguchi/README.md`: é o padrão de qualidade do usuário (números-alvo de ritmo,
-estrutura narrativa, linguagem visual). Compare cada vídeo novo com ele e diga no resumo onde o novo se afasta.
-Ao sugerir ou revisar roteiro, siga a estrutura e as regras de texto de lá.
+Leia `exemplos/yamaguchi/README.md` antes de começar. É a **referência de qualidade** do usuário, **não um molde**:
+- Transfira os princípios (ritmo de 1x a 2x, texto dimensionado pelos clipes, gancho concreto, detalhes que preparam
+  o visual, checagem factual).
+- **Não copie** a estrutura, as frases, a duração, a quantidade de beats nem os motivos visuais. Cada tema pede
+  forma própria.
+- No resumo de cada vídeo novo, compare-o com a referência em **qualidade** (ritmo, clareza, sincronia) e aponte se
+  ele está parecido demais com o exemplo na forma.
 
 ## Etapas
 
