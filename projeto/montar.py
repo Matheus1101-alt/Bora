@@ -30,7 +30,7 @@ for k in range(1,14):
         fc.append(f"[{cur}][v{k}]concat=n=2:v=1:a=0,settb=1/30[x{k}]"); acc+=segs[k][4]
     cur=f"x{k}"
 fc.append(f"[14:a]loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000[a]")
-cmd=["ffmpeg","-v","error","-y"]+inp+["-i","narracao.wav","-filter_complex",";".join(fc),"-map",f"[{cur}]","-map","[a]","-c:v","libx264","-preset","slow","-crf","18","-r",str(FPS),"-c:a","aac","-b:a","192k","-t",str(AUD),"-movflags","+faststart","saida/video_final.mp4"]
+cmd=["ffmpeg","-v","error","-y"]+inp+["-i","narracao.wav","-filter_complex",";".join(fc),"-map",f"[{cur}]","-map","[a]","-c:v","libx264","-pix_fmt","yuv420p","-profile:v","high","-preset","slow","-crf","18","-r",str(FPS),"-c:a","aac","-b:a","192k","-t",str(AUD),"-movflags","+faststart","saida/video_final.mp4"]
 subprocess.run(cmd,check=True)
 json.dump(rows,open("saida/beats.json","w"))
 print("total timeline",round(acc,3))
