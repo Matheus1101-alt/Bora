@@ -17,6 +17,11 @@ Execute sem pedir confirmação a cada etapa; pare só nos pontos marcados **[de
 1920x1080, 30 fps, H.264 High **yuv420p** + AAC, -16 LUFS / -1,5 dBTP. Vertical: `largura:1080, altura:1920` no config (crop central).
 Ao escolher vertical, avise que 16:9→9:16 descarta ~68% da largura em TODOS os beats.
 
+## Referência aprovada
+Antes de começar, leia `exemplos/yamaguchi/README.md`: é o padrão de qualidade do usuário (números-alvo de ritmo,
+estrutura narrativa, linguagem visual). Compare cada vídeo novo com ele e diga no resumo onde o novo se afasta.
+Ao sugerir ou revisar roteiro, siga a estrutura e as regras de texto de lá.
+
 ## Etapas
 
 0. **Ferramentas**: `ffmpeg`, `ffprobe`, `pip install faster-whisper numpy`.

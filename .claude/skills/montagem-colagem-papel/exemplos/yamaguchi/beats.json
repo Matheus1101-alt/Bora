@@ -1,0 +1,133 @@
+{
+ "audio": "projeto/narracao.wav",
+ "duracao": 44.76,
+ "beats": [
+  {
+   "beat": 1,
+   "texto": "6 de agosto de 1945. Hiroshima.",
+   "primeira_palavra": "6",
+   "palavra_ini": 0.0,
+   "ini": 0.0,
+   "fim": 4.44,
+   "dur": 4.44
+  },
+  {
+   "beat": 2,
+   "texto": "Tsutomu Yamaguchi, engenheiro da Mitsubishi,",
+   "primeira_palavra": "Tsutomu",
+   "palavra_ini": 4.54,
+   "ini": 4.44,
+   "fim": 7.48,
+   "dur": 3.04
+  },
+  {
+   "beat": 3,
+   "texto": "está em viagem de trabalho e caminha por uma rua",
+   "primeira_palavra": "está",
+   "palavra_ini": 7.58,
+   "ini": 7.48,
+   "fim": 10.12,
+   "dur": 2.64
+  },
+  {
+   "beat": 4,
+   "texto": "a apenas três quilômetros do centro da explosão.",
+   "primeira_palavra": "a",
+   "palavra_ini": 10.22,
+   "ini": 10.12,
+   "fim": 13.56,
+   "dur": 3.44
+  },
+  {
+   "beat": 5,
+   "texto": "Às 8h15, a bomba explode.",
+   "primeira_palavra": "Às",
+   "palavra_ini": 13.66,
+   "ini": 13.56,
+   "fim": 16.38,
+   "dur": 2.82
+  },
+  {
+   "beat": 6,
+   "texto": "Ele sobrevive e passa a noite num abrigo.",
+   "primeira_palavra": "Ele",
+   "palavra_ini": 16.48,
+   "ini": 16.38,
+   "fim": 19.46,
+   "dur": 3.08
+  },
+  {
+   "beat": 7,
+   "texto": "No dia seguinte, ferido, embarca num trem",
+   "primeira_palavra": "No",
+   "palavra_ini": 19.56,
+   "ini": 19.46,
+   "fim": 22.04,
+   "dur": 2.58
+  },
+  {
+   "beat": 8,
+   "texto": "de volta a Nagasaki, sua cidade natal.",
+   "primeira_palavra": "de",
+   "palavra_ini": 22.14,
+   "ini": 22.04,
+   "fim": 25.32,
+   "dur": 3.28
+  },
+  {
+   "beat": 9,
+   "texto": "Em 9 de agosto, enfaixado, vai ao escritório,",
+   "primeira_palavra": "Em",
+   "palavra_ini": 25.42,
+   "ini": 25.32,
+   "fim": 29.12,
+   "dur": 3.8
+  },
+  {
+   "beat": 10,
+   "texto": "relatando ao chefe o que viu em Hiroshima.",
+   "primeira_palavra": "relatando",
+   "palavra_ini": 29.22,
+   "ini": 29.12,
+   "fim": 32.12,
+   "dur": 3.0
+  },
+  {
+   "beat": 11,
+   "texto": "Às 11h02, a segunda bomba explode.",
+   "primeira_palavra": "Às",
+   "palavra_ini": 32.22,
+   "ini": 32.12,
+   "fim": 35.4,
+   "dur": 3.28
+  },
+  {
+   "beat": 12,
+   "texto": "E Yamaguchi, mais uma vez, sobrevive.",
+   "primeira_palavra": "e",
+   "palavra_ini": 35.5,
+   "ini": 35.4,
+   "fim": 38.36,
+   "dur": 2.96
+  },
+  {
+   "beat": 13,
+   "texto": "O Japão só o reconheceu oficialmente",
+   "primeira_palavra": "O",
+   "palavra_ini": 38.46,
+   "ini": 38.36,
+   "fim": 40.3,
+   "dur": 1.94
+  },
+  {
+   "beat": 14,
+   "texto": "como sobrevivente duplo em 2009, aos 93 anos.",
+   "primeira_palavra": "como",
+   "palavra_ini": 40.4,
+   "ini": 40.3,
+   "fim": 44.76,
+   "dur": 4.46
+  }
+ ],
+ "avisos": []
+}

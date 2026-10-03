@@ -1,0 +1,156 @@
+{
+ "01.mp4": {
+  "fps": 24.0,
+  "frames": 144,
+  "w": 1280,
+  "h": 720,
+  "cut": 21,
+  "settle": 91,
+  "preroll_s": 0.88,
+  "util_s": 2.96,
+  "salto": 8.0
+ },
+ "02.mp4": {
+  "fps": 24.0,
+  "frames": 144,
+  "w": 1280,
+  "h": 720,
+  "cut": 2,
+  "settle": 140,
+  "preroll_s": 0.08,
+  "util_s": 5.79,
+  "salto": 22.5
+ },
+ "03.mp4": {
+  "fps": 24.0,
+  "frames": 144,
+  "w": 1280,
+  "h": 720,
+  "cut": 1,
+  "settle": 81,
+  "preroll_s": 0.04,
+  "util_s": 3.38,
+  "salto": 32.8
+ },
+ "04.mp4": {
+  "fps": 24.0,
+  "frames": 144,
+  "w": 1280,
+  "h": 720,
+  "cut": 1,
+  "settle": 139,
+  "preroll_s": 0.04,
+  "util_s": 5.79,
+  "salto": 14.1
+ },
+ "05.mp4": {
+  "fps": 24.0,
+  "frames": 144,
+  "w": 1280,
+  "h": 720,
+  "cut": 1,
+  "settle": 99,
+  "preroll_s": 0.04,
+  "util_s": 4.12,
+  "salto": 8.6
+ },
+ "06.mp4": {
+  "fps": 24.0,
+  "frames": 144,
+  "w": 1280,
+  "h": 720,
+  "cut": 1,
+  "settle": 89,
+  "preroll_s": 0.04,
+  "util_s": 3.71,
+  "salto": 35.5
+ },
+ "07.mp4": {
+  "fps": 24.0,
+  "frames": 144,
+  "w": 1280,
+  "h": 720,
+  "cut": 2,
+  "settle": 120,
+  "preroll_s": 0.08,
+  "util_s": 4.96,
+  "salto": 32.7
+ },
+ "08.mp4": {
+  "fps": 24.0,
+  "frames": 144,
+  "w": 1280,
+  "h": 720,
+  "cut": 2,
+  "settle": 101,
+  "preroll_s": 0.08,
+  "util_s": 4.17,
+  "salto": 51.3
+ },
+ "09.mp4": {
+  "fps": 24.0,
+  "frames": 144,
+  "w": 1280,
+  "h": 720,
+  "cut": 0,
+  "settle": 97,
+  "preroll_s": 0.0,
+  "util_s": 4.08,
+  "salto": 0.0
+ },
+ "10.mp4": {
+  "fps": 24.0,
+  "frames": 144,
+  "w": 1280,
+  "h": 720,
+  "cut": 3,
+  "settle": 107,
+  "preroll_s": 0.12,
+  "util_s": 4.38,
+  "salto": 18.0
+ },
+ "11.mp4": {
+  "fps": 24.0,
+  "frames": 144,
+  "w": 1280,
+  "h": 720,
+  "cut": 1,
+  "settle": 99,
+  "preroll_s": 0.04,
+  "util_s": 4.12,
+  "salto": 37.2
+ },
+ "12.mp4": {
+  "fps": 24.0,
+  "frames": 144,
+  "w": 1280,
+  "h": 720,
+  "cut": 9,
+  "settle": 100,
+  "preroll_s": 0.38,
+  "util_s": 3.83,
+  "salto": 27.2
+ },
+ "13.mp4": {
+  "fps": 24.0,
+  "frames": 144,
+  "w": 1280,
+  "h": 720,
+  "cut": 1,
+  "settle": 114,
+  "preroll_s": 0.04,
+  "util_s": 4.75,
+  "salto": 26.5
+ },
+ "14.mp4": {
+  "fps": 24.0,
+  "frames": 144,
+  "w": 1280,
+  "h": 720,
+  "cut": 1,
+  "settle": 94,
+  "preroll_s": 0.04,
+  "util_s": 3.92,
+  "salto": 40.5
+ }
+}
