@@ -1,6 +1,6 @@
 # Exemplo de referência: Tsutomu Yamaguchi (aprovado)
 
-Vídeo aprovado pelo usuário e adotado como **referência de qualidade**, não como molde.
+Vídeo aprovado pelo usuário. Serve **apenas como referência** de qualidade para projetos futuros e não é um molde.
 
 > **Use como régua, não como forma.** Cada vídeo novo deve atingir o mesmo nível (ritmo, clareza,
 > precisão, sincronia), mas com estrutura, frases e visual próprios do tema. Se o vídeo novo puder ser
@@ -18,6 +18,7 @@ Vídeo aprovado pelo usuário e adotado como **referência de qualidade**, não 
 | Detalhes concretos (número, hora, distância) | O espelhamento "Às Xh, a bomba explode" |
 | Fechar com um dado que reenquadra a história | Ironia + data + idade no fim |
 | Cada beat = uma imagem clara; o texto prepara o visual | Tarja nos olhos, barbante vermelho, etiquetas datilografadas |
+| Voz clara, música 10 a 18 dB abaixo, com ducking | A faixa musical específica |
 | Checagem factual antes de gerar a voz | — |
 
 A estrutura narrativa e a linguagem visual abaixo **descrevem** o que funcionou aqui. Elas explicam *por que*
@@ -35,6 +36,7 @@ Master: `projeto/saida/video_final.mp4` (raiz do repositório). Clipes e narraç
 | Congelamento do frame final | 0,2–0,6 s | ≤ 1 s |
 | Fala do TTS | ~5,3 sílabas/s + pausas de 0,6–1,4 s entre frases | — |
 | Áudio | -16 LUFS, true peak -1,5 dBTP | — |
+| Trilha (teste) | -30 LUFS antes do mix + ducking; pausas 8–17 dB abaixo da fala | 10–18 dB abaixo |
 | Trilha (teste) | -30 LUFS antes do mix + ducking; pausas 8–17 dB abaixo da fala | 10–18 dB abaixo |
 
 A v1 (34,4 s, mesmo conteúdo com texto mais enxuto) foi **reprovada no ritmo**: beat 03 a 4x e beats a 3,3x.
