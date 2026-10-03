@@ -35,6 +35,7 @@ Master: `projeto/saida/video_final.mp4` (raiz do repositório). Clipes e narraç
 | Congelamento do frame final | 0,2–0,6 s | ≤ 1 s |
 | Fala do TTS | ~5,3 sílabas/s + pausas de 0,6–1,4 s entre frases | — |
 | Áudio | -16 LUFS, true peak -1,5 dBTP | — |
+| Trilha (teste) | -30 LUFS antes do mix + ducking; pausas 8–17 dB abaixo da fala | 10–18 dB abaixo |
 
 A v1 (34,4 s, mesmo conteúdo com texto mais enxuto) foi **reprovada no ritmo**: beat 03 a 4x e beats a 3,3x.
 A lição: dimensionar o **texto** por beat a partir do tempo de montagem dos clipes, não o contrário.

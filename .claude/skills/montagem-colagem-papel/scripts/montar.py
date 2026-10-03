@@ -9,7 +9,11 @@ CONFIG: {
   "crossfade_apos": [1,2,5,...],    # opcional: beats seguidos de crossfade (padrão: texto termina em . ! ?)
   "ajuste_cut": {"05.mp4": 1},      # opcional: corrige pré-roll detectado
   "saida": "saida/video_final.mp4", "largura":1920, "altura":1080, "fps":30,
-  "crossfade":0.15, "hold":0.2, "vel_max":4.0, "lufs":-16 }
+  "crossfade":0.15, "hold":0.2, "vel_max":4.0, "lufs":-16,
+  "trilha": "trilha.mp3",           # opcional: música de fundo
+  "trilha_inicio": 1.0,             # s a pular no início da música (silêncio/intro)
+  "trilha_lufs": -30,               # nível da música antes do mix (voz em -16)
+  "trilha_fade_in": 0.5, "trilha_fade_out": 2.5, "ducking": true }
 """
 import json, subprocess, sys, os
 C = json.load(open(sys.argv[1]))
@@ -50,9 +54,27 @@ for k in range(1, len(segs)):
         fc.append(f"[{cur}][v{k}]concat=n=2:v=1:a=0,settb=1/{FPS}[x{k}]"); acc += segs[k][4]
     cur = f"x{k}"
 fc.append(f"[{cur}]format=yuv420p[vout]")
-fc.append(f"[{len(segs)}:a]loudnorm=I={C.get('lufs',-16)}:TP=-1.5:LRA=11,aresample=48000[a]")
+NA = len(segs); LUFS = C.get("lufs", -16)
+extra_in = ["-i", C["narracao"]]
+T = C.get("trilha")
+if not T:
+    fc.append(f"[{NA}:a]loudnorm=I={LUFS}:TP=-1.5:LRA=11,aresample=48000[a]")
+else:
+    # trilha de fundo: recorta a partir de trilha_inicio, normaliza baixo, fades, ducking sob a voz, mix e normalização final
+    extra_in += ["-i", T]
+    ti, tl = C.get("trilha_inicio", 0.0), C.get("trilha_lufs", -30)
+    fi, fo = C.get("trilha_fade_in", 0.5), C.get("trilha_fade_out", 2.5)
+    fc.append(f"[{NA}:a]aresample=48000,aformat=channel_layouts=stereo,loudnorm=I={LUFS}:TP=-2:LRA=11,aresample=48000,asplit=2[voz][sc]")
+    fc.append(f"[{NA+1}:a]atrim=start={ti},asetpts=PTS-STARTPTS,aresample=48000,aformat=channel_layouts=stereo,"
+              f"loudnorm=I={tl}:TP=-6:LRA=11,aresample=48000,apad,atrim=duration={AUD},"
+              f"afade=t=in:d={fi},afade=t=out:st={AUD-fo:.3f}:d={fo}[mus]")
+    if C.get("ducking", True):
+        fc.append("[mus][sc]sidechaincompress=threshold=0.02:ratio=4:attack=80:release=600:makeup=1[duck]")
+    else:
+        fc.append("[sc]anullsink;[mus]anull[duck]")
+    fc.append(f"[voz][duck]amix=inputs=2:normalize=0:duration=first,loudnorm=I={LUFS}:TP=-1.5:LRA=11,aresample=48000[a]")
 os.makedirs(os.path.dirname(C["saida"]) or ".", exist_ok=True)
-subprocess.run(["ffmpeg","-v","error","-y"] + inp + ["-i", C["narracao"], "-filter_complex", ";".join(fc),
+subprocess.run(["ffmpeg","-v","error","-y"] + inp + extra_in + ["-filter_complex", ";".join(fc),
     "-map","[vout]","-map","[a]","-c:v","libx264","-pix_fmt","yuv420p","-profile:v","high","-preset","slow","-crf","18",
     "-r",str(FPS),"-c:a","aac","-b:a","192k","-t",str(AUD),"-movflags","+faststart", C["saida"]], check=True)
 sd = os.path.dirname(C["saida"]) or "."
